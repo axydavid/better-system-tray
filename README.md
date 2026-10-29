@@ -9,6 +9,40 @@ drag-and-drop, stack from the bottom, and can be shown, hidden or pinned.
 
 Requires GNOME Shell 50 or 51. Built against 50.6.
 
+## Screenshots
+
+Two-column tray on a vertical dock, clock on one line:
+
+<img src="screenshots/vertical-dock.png" alt="Vertical dock with a two-column system tray" width="220">
+
+Same tray on a horizontal panel:
+
+<img src="screenshots/horizontal-dock.png" alt="Horizontal Dash to Panel with the two-column tray" width="800">
+
+<img src="screenshots/horizontal-dock-tray.png" alt="Close-up of the tray on a horizontal panel" width="520">
+
+Battery popup — temperature stays white until the CPU is actually throttling:
+
+<img src="screenshots/popup-battery.png" alt="Battery popup at normal temperature" width="420">
+<img src="screenshots/popup-battery-throttling.png" alt="Battery popup with red temperature while throttling" width="420">
+
+Dedicated Wi-Fi, Bluetooth and GSConnect popups. Settings is always the last row:
+
+<img src="screenshots/popup-bluetooth.png" alt="Bluetooth popup" width="420">
+<img src="screenshots/popup-gsconnect.png" alt="GSConnect popup" width="420">
+
+Right-click any system icon for that panel’s settings, or the extension preferences:
+
+<img src="screenshots/popup-context.png" alt="Right-click context menu" width="420">
+
+Settings, five tabs:
+
+<img src="screenshots/settings-layout.png" alt="Layout tab" width="480">
+<img src="screenshots/settings-icons.png" alt="Icons tab" width="480">
+<img src="screenshots/settings-popups.png" alt="Popups tab" width="480">
+<img src="screenshots/settings-tiles.png" alt="Quick Settings tab" width="480">
+<img src="screenshots/settings-tray.png" alt="Tray tab" width="480">
+
 ## Install
 
 ### From a release zip

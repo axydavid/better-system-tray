@@ -25,6 +25,7 @@ export default class SplitSystemIndicatorsPrefs extends ExtensionPreferences {
     _layoutPage(settings) {
         const page = new Adw.PreferencesPage({
             title: _('Layout'),
+            name: 'layout',
             icon_name: 'view-grid-symbolic',
         });
 
@@ -55,6 +56,7 @@ export default class SplitSystemIndicatorsPrefs extends ExtensionPreferences {
     _iconsPage(settings) {
         const page = new Adw.PreferencesPage({
             title: _('Icons'),
+            name: 'icons',
             icon_name: 'view-reveal-symbolic',
         });
 
@@ -84,6 +86,7 @@ export default class SplitSystemIndicatorsPrefs extends ExtensionPreferences {
     _popupsPage(settings) {
         const page = new Adw.PreferencesPage({
             title: _('Popups'),
+            name: 'popups',
             icon_name: 'view-more-horizontal-symbolic',
         });
 
@@ -117,6 +120,7 @@ export default class SplitSystemIndicatorsPrefs extends ExtensionPreferences {
     _tilesPage(settings) {
         const page = new Adw.PreferencesPage({
             title: _('Quick Settings'),
+            name: 'tiles',
             icon_name: 'preferences-system-symbolic',
         });
 
@@ -155,6 +159,7 @@ export default class SplitSystemIndicatorsPrefs extends ExtensionPreferences {
     _trayPage(settings) {
         const page = new Adw.PreferencesPage({
             title: _('Tray'),
+            name: 'tray',
             icon_name: 'application-x-addon-symbolic',
         });
 
