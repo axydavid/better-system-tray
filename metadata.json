@@ -1,0 +1,10 @@
+{
+    "uuid": "better-system-tray@axydavid.github.io",
+    "name": "Better System Tray",
+    "description": "A two-column system tray that replaces the shared Quick Settings cluster and the AppIndicator tray. Wi-Fi, Bluetooth, battery, power mode and GSConnect each open their own popup. Drag icons to rearrange.",
+    "shell-version": ["50", "51"],
+    "session-modes": ["user"],
+    "settings-schema": "org.gnome.shell.extensions.split-system-indicators",
+    "url": "https://github.com/axydavid/better-system-tray",
+    "version": 1
+}

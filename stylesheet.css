@@ -1,0 +1,172 @@
+/* The Quick Settings button is only a carrier for the icon grid. Padding and
+ * hover belong to the individual cells, never to the button as a whole. */
+.ssi-host {
+    padding: 0;
+    margin: 0;
+    -minimum-hpadding: 0;
+    -natural-hpadding: 0;
+    background-color: transparent;
+}
+
+.ssi-grid {
+    padding: 0;
+    margin: 0;
+}
+
+/* One icon = one button. */
+.ssi-cell {
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.ssi-cell:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.ssi-cell:focus {
+    background-color: rgba(255, 255, 255, 0.14);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.35);
+}
+
+.ssi-cell:active,
+.ssi-cell:open {
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.ssi-cell:dragging {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+/* The shell theme only sizes status icons inside `.panel-button`; our cells
+ * are not panel buttons (that is what made the host highlight as one block). */
+.ssi-cell .system-status-icon {
+    icon-size: 1.091em;
+    padding: 0;
+    margin: 0;
+}
+
+.ssi-cell .panel-status-indicators-box {
+    spacing: 2px;
+}
+
+.ssi-cell .power-status.panel-status-indicators-box {
+    spacing: 0;
+}
+
+/* Tray buttons are carriers inside a cell: no chrome of their own. */
+.ssi-tray-button {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    -minimum-hpadding: 0;
+    -natural-hpadding: 0;
+}
+
+.ssi-tray-button:hover,
+.ssi-tray-button:focus,
+.ssi-tray-button:active {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.ssi-menu-box {
+    min-width: 260px;
+}
+
+/* -- background apps button and panel (full Quick Settings popup) -------- */
+
+.ssi-bg-wrap {
+  padding: 0;
+}
+
+.ssi-bg-badge {
+  background-color: -st-accent-color;
+  color: -st-accent-fg-color;
+  border-radius: 99px;
+  min-width: 14px;
+  height: 14px;
+  padding: 0 2px;
+  margin: 1px 1px 0 0;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ssi-bg-panel {
+  background-color: rgba(128, 128, 128, 0.16);
+  border-radius: 18px;
+  padding: 6px 8px 8px 8px;
+  spacing: 4px;
+}
+
+.ssi-bg-panel .popup-menu-item {
+  border-radius: 12px;
+}
+
+.ssi-bg-header {
+  spacing: 8px;
+  padding: 6px 6px 2px 6px;
+}
+
+.ssi-bg-header-icon {
+  icon-size: 16px;
+}
+
+.ssi-bg-header-title {
+  font-weight: bold;
+}
+
+.ssi-bg-settings {
+  margin: 2px 4px 0 4px;
+  padding: 4px 14px;
+}
+
+/* -- popup titles and the battery / temperature row ----------------------- */
+
+/* The title row of every popup (the one with the switch) and the values in the
+ * battery row. */
+.ssi-title {
+  font-weight: 600;
+}
+
+/* One row, two buttons: each has its own hover. */
+.ssi-status-row,
+.ssi-status-row:hover,
+.ssi-status-row:active,
+.ssi-status-row:focus {
+  padding: 0 4px;
+  spacing: 8px;
+  background-color: transparent;
+}
+
+.ssi-row-button {
+  border-radius: 10px;
+  padding: 6px 10px;
+  background-color: transparent;
+}
+
+.ssi-row-button:hover,
+.ssi-row-button:focus {
+  background-color: rgba(128, 128, 128, 0.22);
+}
+
+.ssi-row-button:active {
+  background-color: rgba(128, 128, 128, 0.34);
+}
+
+.ssi-row-content {
+  spacing: 8px;
+}
+
+/* The processor is being held back by heat. */
+.ssi-temperature.ssi-hot {
+  color: #f66151;
+}
+
+/* A section heading inside a popup (not a title with a switch). */
+.ssi-heading {
+  font-weight: 600;
+  color: rgba(238, 238, 236, 0.6);
+}

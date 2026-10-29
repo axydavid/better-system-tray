@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.split-system-indicators"
+          path="/org/gnome/shell/extensions/split-system-indicators/">
+
+    <key name="columns" type="i">
+      <default>2</default>
+      <range min="1" max="4"/>
+      <summary>Icons per row</summary>
+      <description>How many icons sit side by side. 2 gives the two-column stack.</description>
+    </key>
+    <key name="icon-padding" type="i">
+      <default>3</default>
+      <range min="0" max="12"/>
+      <summary>Icon padding</summary>
+      <description>Space in pixels around each icon, inside its hover highlight.</description>
+    </key>
+    <key name="icon-spacing" type="i">
+      <default>2</default>
+      <range min="0" max="12"/>
+      <summary>Icon spacing</summary>
+      <description>Gap in pixels between neighbouring icons.</description>
+    </key>
+    <key name="fill-from-bottom" type="b">
+      <default>true</default>
+      <summary>Stack icons from the bottom</summary>
+      <description>The first icon sits at the bottom and new rows grow upwards. When off the stack grows downwards from the top.</description>
+    </key>
+    <key name="icon-order" type="as">
+      <default>[]</default>
+      <summary>Icon order</summary>
+      <description>Remembered order of the icons, first entry is the first slot. Changed by dragging icons. Empty means the default order (system icons first, then tray icons).</description>
+    </key>
+
+    <key name="split-wifi" type="b">
+      <default>true</default>
+      <summary>Separate Wi-Fi popup</summary>
+    </key>
+    <key name="split-bluetooth" type="b">
+      <default>true</default>
+      <summary>Separate Bluetooth popup</summary>
+      <description>Bluetooth opens its own popup (switch and devices) instead of the shared Quick Settings menu.</description>
+    </key>
+    <key name="split-power" type="b">
+      <default>true</default>
+      <summary>Separate power popup</summary>
+    </key>
+    <key name="split-performance" type="b">
+      <default>true</default>
+      <summary>Separate performance popup</summary>
+    </key>
+    <key name="split-gsconnect" type="b">
+      <default>true</default>
+      <summary>Separate GSConnect popup</summary>
+      <description>GSConnect (mobile devices) opens its own popup instead of the shared Quick Settings menu.</description>
+    </key>
+    <key name="background-apps-button" type="b">
+      <default>true</default>
+      <summary>Background apps as a round button</summary>
+      <description>Move the "Background Apps" tile of the full popup into a round button next to the screenshot button. Its list opens at the top of the popup.</description>
+    </key>
+
+    <key name="visibility" type="a{ss}">
+      <default>{'icon:sys:powerProfiles': 'hide'}</default>
+      <summary>Icon and tile visibility</summary>
+      <description>Maps an item to "auto", "show" or "hide". Items starting with "icon:" are icons of the panel (show = always show, even while GNOME hides it); items starting with "tile:" are tiles and buttons of the full popup (hide = remove).</description>
+    </key>
+    <key name="known-items" type="a{ss}">
+      <default>{}</default>
+      <summary>Items seen so far</summary>
+      <description>Filled in by the extension so the settings window can list every icon and tile, including tray apps that are not running right now.</description>
+    </key>
+
+    <key name="legacy-tray-enabled" type="b">
+      <default>true</default>
+      <summary>Enable legacy tray icons</summary>
+    </key>
+    <key name="icon-size" type="i">
+      <default>0</default>
+      <summary>Tray icon size</summary>
+      <description>0 follows the panel. Otherwise size in pixels.</description>
+    </key>
+    <key name="icon-opacity" type="i">
+      <default>255</default>
+      <range min="80" max="255"/>
+      <summary>Tray icon opacity</summary>
+    </key>
+    <key name="icon-saturation" type="d">
+      <default>0.0</default>
+    </key>
+    <key name="icon-brightness" type="d">
+      <default>0.0</default>
+    </key>
+    <key name="icon-contrast" type="d">
+      <default>0.0</default>
+    </key>
+    <key name="custom-icons" type="a(sss)">
+      <default>[]</default>
+    </key>
+  </schema>
+</schemalist>
